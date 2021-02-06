@@ -1,3 +1,12 @@
+.nav1 {
+    display:flex;
+    flex-wrap: wrap;
+}
+.social-nav1:hover{
+    padding: 0;
+    border-radius:30%;
+    border: 1px solid white;
+}
 header{
     height: 80vw;
     width: 100vw;
@@ -46,12 +55,28 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
+    margin-top: 2px;
+}
 @media only screen and (max-width: 576px) {
+    .nav1{
+        display: block;
+    }
     header{
         background-attachment:scroll;
         
     }
     .fëmijë{
         margin-top: 30%;
+    }
+    .social-nav1:hover{
+        padding: 0;
+        border-radius:30%;
+        border: 1px solid white;
     }
   }

@@ -17,40 +17,47 @@
 <body> 
     <!-- <h1>Still Working</h1> -->
 
-    <!-- navBar1 -->
-    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <!------ navBar1 ----->
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark p-0 m-0 nav1">
     <div class="container">
         <!-- Links -->
-        <div class="justify-content-end">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">teuta.lleshi@gmail.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="fa fa-phone"></i> +383 (0)44 131 312</a>
-                </li>
-            </ul>
+        <div class="col-md-8 nav1-left">
+            <div class="justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">teuta.lleshi@gmail.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone"></i> +383 (0)44 131 312</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="justify-content-end">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <img src="facebook-img.png" width="52px" height="49px">
-                </li>
-                <li class="nav-item">
-                    <img src="instagram-img.png" width="50px" height="50px">
-                </li>
-                <li class="pt-2 pl-2">
-                    <button type="button" class="btn btn-warning">Rezervo</button>
-                </li>
-            </ul>
+        <div class="col-md-4 nav1-right">
+            <div class="justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active mt-3  social-nav1" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mt-3 mr-2 social-nav1" href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="mt-2 pt-2 pl-2">
+                        <button type="button" class="btn btn-warning">Rezervo</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
-<!-- ending of the navBar1 -->
+<!------ ending of the navBar1 ------>
 
 <!-- navBar -->
-<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
+<nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top p-0">
     <div class="container">
         <!-- Brand/logo -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
@@ -98,7 +105,7 @@
 <!-- SERVICES -->
 <section class="container pt-5">
 
-    <h2 class="text-center">SERVICES</h2>    
+    <h2 class="text-center">SHËRBIMET</h2>    
 
     <div class="row">
         <div class="col-md-4 pt-4">
@@ -178,7 +185,7 @@
 </section>
 <!-- ending of SERVICES -->
 
-<!-- ORDINANCA -->
+<!-- ORDINANCA-carousel -->
 <div id="demo" class="carousel slide pt-5" data-ride="carousel">
 
     <!-- Indicators -->
@@ -205,12 +212,13 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
-<!-- ending of ORDINANCA -->
+<!-- ending of ORDINANCA-carousel -->
 
 <!-- KOLEKSIONI -->
 <section class="container pt-5 pb-5">
 
     <h2 class="text-center">KOLEKSIONI</h2>
+
     <div class="row">
         <div class="col-md-4 pt-5">
             <div class="card">
@@ -249,15 +257,44 @@
         </div>
     </div>
 </section>
-<!-- ending og KOLEKSIONI -->
+<!-- ending of KOLEKSIONI -->
 
+<!-- kontakti -->
+<section class="container pt-4 pb-3">
+    <h2 class="text-center">KONTAKTI</h2>
 
-<!-- test -->
+    <div class="row">
+
+        <div class="col-md-6">
+            <input type="text" name="name" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name"> <br><br>
+            <input type="text" name="email" placeholder="someone@example.com" maxlength="30" width="300" height="30"> <br><br>
+            <input type="text" name="Subject" placeholder="Subject"> <br>
+            <textarea class="text-area" name="message" cols="45" rows="5" placeholder="Message"></textarea> <br>
+            <input style="width: 73px; font-weight: bold;" type="Submit" value="Rezervo">
+        </div>
+
+        <div class="col-md-6 text-center">
+            <h2>+383 (0)44 131 312</h2>  <br>
+            <h2 ><a class="email" href="mailto:teuta.lleshi@gmail.com">teuta.lleshi@gmail.com</a></h2> <br>
+		    	
+            <a href="https://www.facebook.com/OrdinancaStomatologjikeDhembi" target="_blank">
+                <img style="border-radius: 5px;" src="facebook_logo.png">
+            </a> 
+            <a href="https://www.instagram.com/ordinancadhembi/" target="_blank">
+                <img style="border-radius: 5px;" src="instagram_logo.png">
+            </a>
+        </div>
+    </div>
+    
+</section>
+<!-- ending of kontakti -->
+
 <!-- Footer -->
 <footer class="bg-secondary text-center">
     <div class="container p-4">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2 mt-5">
                 <a href="https://www.instagram.com/ordinancadhembi/" class="text-decoration-none" target="_blank">
                     <figure class="figure-caption">
                         <img src="instagram-img.png" class="social-img p-5">
@@ -267,7 +304,7 @@
                     </figure>  
                 </a>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-md-2 mt-5">
                 <a href="https://www.facebook.com/OrdinancaStomatologjikeDhembi" class="text-decoration-none" target="_blank">
                     <figure class="figure-caption">
                         <img src="facebook-img.PNG" class="social-img p-5">
@@ -275,10 +312,9 @@
                             <p>@OrdinancaDhembi</p>
                         </figcaption>
                     </figure>
-                    
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2 mt-5">
                 <a href="mailto:teuta.lleshi@gmail.com" class="text-decoration-none">
                     <figure class="figure-caption">
                         <img src="gmail-img.PNG" class="social-img p-5">
@@ -289,7 +325,7 @@
                 </a>
             </div>
 
-            <div class="col-md-3 pt-5 mt-5">
+            <div class="col-md-2 pt-5 mt-5">
         
                 <ul class="list-unstyled text-center">
                     <li>
@@ -306,6 +342,11 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-md-4">
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.913116645097!2d21.159299114791995!3d42.66319652389748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f72aa2067d3%3A0x1689036e1e1000d8!2sOrdinanca%20Stomatologjike%20%22Dh%C3%ABmbi%22!5e0!3m2!1sen!2s!4v1612636607018!5m2!1sen!2s" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </p>
+            </div>
         </div>
     </div>
   
@@ -316,5 +357,8 @@
     <!-- Copyright -->
 </footer>
   <!-- Footer -->
+
+
+  <!-- test -->
 </body>
 </html>
